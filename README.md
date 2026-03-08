@@ -29,6 +29,17 @@ During calculations, digits are processed step by step, similar to how arithmeti
 * **Multiplication** – Uses the schoolbook multiplication method with partial products
 * **Division**       – Implements integer division using repeated subtraction
 
+## Input Rules
+* The expression must be given without spaces
+* Only one operator is allowed in an expression
+* Supported operators are +, -, x, and /
+* Use x for multiplication instead of *
+* Both positive and negative integers are supported
+* Input format must be
+  ```
+  <number1><operator><number2>
+  ```
+  
 ## Compilation
 
 ```
@@ -48,7 +59,16 @@ Example runs:
 ./apc 123x45
 ./apc 20/4
 ```
+## Concepts Used
+While developing this project, the following concepts were applied:
 
+* Doubly Linked Lists
+* Dynamic Memory Allocation
+* Command Line Arguments
+* Modular Programming in C
+* Arithmetic algorithms (carry, borrow, partial products)
+* Handling large numbers beyond built-in data type limits
+  
 ## Limitations
 * Supports only **single operator expressions**
 * Division returns **integer results only**
